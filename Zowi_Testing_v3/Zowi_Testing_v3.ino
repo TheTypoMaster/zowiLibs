@@ -160,7 +160,7 @@ void setup() {
   // Setup callbacks for SerialCommand commands 
   SCmd.addCommand("S", stopp);            //  sendAck();
   SCmd.addCommand("L", receiveLED);       //  sendAck();
-  SCmd.addCommand("T", recieveBuzzer);    //  sendAck();
+  SCmd.addCommand("T", receiveBuzzer);    //  sendAck();
   SCmd.addCommand("M", receiveMovement);  //  sendAck();
   SCmd.addCommand("R", receiveName);      //  sendAck();
   SCmd.addCommand("E", requestName);
@@ -637,7 +637,7 @@ void receiveLED(){
 }
 
 //Function to receive buzzer commands
-void recieveBuzzer(){
+void receiveBuzzer(){
   
   //sendAck();
   stopp();
